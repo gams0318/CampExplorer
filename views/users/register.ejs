@@ -1,0 +1,56 @@
+<% layout('layouts/boilerplate')%>
+
+    <div class=" container w-100 flex-column  justify-content-center align-items-center mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card shadow">
+                    <img src="https://th.bing.com/th/id/R.c474bdbc5333320d81a47e9b29f89ef1?rik=fT7vkH0Rzt2e8A&riu=http%3a%2f%2fmedia.blogto.com%2farticles%2f2017725-lake-superior.jpg%3fcmd%3dresize_then_crop%26quality%3d70%26w%3d2048%26height%3d1365&ehk=%2b%2f8HJR8%2bSgortTzqd2RgEGijs8d3%2bl0wwuOjRgPGJhI%3d&risl=&pid=ImgRaw&r=0"
+                        alt="" clas="card-img-top">
+                    <div class="card-body mx-3">
+                        <h4 class="card-title">Register</h4>
+                        <form action="/register" method="POST" class="validated-form" novalidate>
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" id="username" autofocus class="form-control" name="username"
+                                    required>
+                                <div class="valid-feedback">Looks good</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">email</label>
+                                <input type="email" id="email" class="form-control" name="email" required>
+                                <div class="valid-feedback">Looks good</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="password" class="form-label">password</label>
+                                <input type="password" id="password" class="form-control" name="password" required>
+                                <div class="valid-feedback">Looks good</div>
+                            </div>
+                            <button class="btn btn-success w-100">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" id="username" class="form-control" name="username" required>
+        <div class="valid-feedback">Looks good</div>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">email</label>
+        <input type="email" id="email" class="form-control" name="email" required>
+        <div class="valid-feedback">Looks good</div>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">password</label>
+        <input type="password" id="password" class="form-control" name="password" required>
+        <div class="valid-feedback">Looks good</div>
+    </div>
+    <button class="btn btn-success">Submit</button>
+    </form> -->
