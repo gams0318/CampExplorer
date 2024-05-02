@@ -1,61 +1,88 @@
 <% layout('layouts/boilerplate')%>
-    <div class="row">
-        <h1 class="text-center">New campground</h1>
-        <div class="col-md-6 offset-md-3">
-            <div class="card shadow">
-                <div class="card-body">
-                    <form action="/campgrounds" method="POST" novalidate class="validated-form"
-                        enctype="multipart/form-data">
-                        <div class="mb-3">
-                            <label class="form-label" for="title">Title</label>
-                            <input class="form-control" required type="text" name="title" id="title"
-                                placeholder="title">
-                            <div class="valid-feedback">
-                                looks good
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label" for="location">Location</label>
-                            <input class="form-control" required type="text" name="location" id="location"
-                                placeholder="city, state">
-                        </div>
-                        <!-- <div class="mb-3">
-                    <label class="form-label" for="image">Image </label>
-                    <input type="file" id="image" name="image" multiple>
-                    <!-- <input class="form-control" required type="text" name="image" id="image" placeholder="url"> -->
+<div class="row">
+  <h1 class="text-center">New campground</h1>
+  <div class="col-md-6 offset-md-3">
+    <div class="card shadow">
+      <div class="card-body">
+        <form
+          action="/campgrounds"
+          method="POST"
+          novalidate
+          class="validated-form"
+          enctype="multipart/form-data"
+        >
+          <div class="mb-3">
+            <label class="form-label" for="title">Title</label>
+            <input
+              class="form-control"
+              required
+              type="text"
+              name="title"
+              id="title"
+              placeholder="title"
+            />
+            <div class="valid-feedback">looks good</div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="location">Location</label>
+            <input
+              class="form-control"
+              required
+              type="text"
+              name="location"
+              id="location"
+              placeholder="city, state"
+            />
+          </div>
 
-                        <div class="mb-3 form-file custom-file">
-                            <label for="image" class="form-label form-file-label">Upload Image</label>
-                            <input class="form-control form-file-input" name="image" type="file" id="image" multiple>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label" for="price">Price</label>
-                            <div class="input-group">
-                                <span class="input-group-text" id="price-label">$ </span>
-                                <input class="form-control" required type="text" name="price" id="price" placeholder="0"
-                                    aria-label="price" aria-describedby="price-label">
-
-                            </div>
-
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label" for="description">Description</label>
-                            <textarea class="form-control" type="text" name="description" id="description"
-                                placeholder="description" required></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <button class="btn btn-success">Add Campground</button>
-                        </div>
-                    </form>
-                    <br>
-                    <footer>
-                        <a class="btn btn-info" href="/campgrounds">Cancel</a>
-                    </footer>
-                </div>
+          <div class="mb-3 form-file custom-file">
+            <label for="image" class="form-label form-file-label"
+              >Upload Image</label
+            >
+            <input
+              class="form-control form-file-input"
+              name="image"
+              type="file"
+              id="image"
+              multiple
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="price">Price</label>
+            <div class="input-group">
+              <span class="input-group-text" id="price-label">$ </span>
+              <input
+                class="form-control"
+                required
+                type="text"
+                name="price"
+                id="price"
+                placeholder="0"
+                aria-label="price"
+                aria-describedby="price-label"
+              />
             </div>
-        </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="description">Description</label>
+            <textarea
+              class="form-control"
+              type="text"
+              name="description"
+              id="description"
+              placeholder="description"
+              required
+            ></textarea>
+          </div>
+          <div class="mb-3">
+            <button class="btn btn-success">Add Campground</button>
+          </div>
+        </form>
+        <br />
+        <footer>
+          <a class="btn btn-info" href="/campgrounds">Cancel</a>
+        </footer>
+      </div>
     </div>
-
-
-    <!-- <h1>Add a new campground</h1>
-    > -->
+  </div>
+</div>

@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cities = require('./cities')
 const { descriptors, places } = require('./seedHelpers')
 const Campground = require('../models/campground')
-mongoose.connect('mongodb://127.0.0.1:27017/yelpCamp');
+mongoose.connect('mongodb://127.0.0.1:27017/CampExplorer');
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, 'connection error:'));
 db.once("open", () => {
@@ -21,13 +21,13 @@ const seedDB = async () => {
             title: `${sample(descriptors)} ${sample(places)}`,
             image: [
                 {
-                    url: 'https://res.cloudinary.com/dwazmjaph/image/upload/v1688197876/YelpCamp/l9i1k9bpnjvyrpuynxtf.jpg',
-                    filename: 'YelpCamp/l9i1k9bpnjvyrpuynxtf',
+                    url: 'https://res.cloudinary.com/dwazmjaph/image/upload/v1688197876/CampExplorer/l9i1k9bpnjvyrpuynxtf.jpg',
+                    filename: 'CampExplorer/l9i1k9bpnjvyrpuynxtf',
 
                 },
                 {
-                    url: 'https://res.cloudinary.com/dwazmjaph/image/upload/v1688197877/YelpCamp/zno09ycjauoejka7axpq.jpg',
-                    filename: 'YelpCamp/zno09ycjauoejka7axpq',
+                    url: 'https://res.cloudinary.com/dwazmjaph/image/upload/v1688197877/CampExplorer/zno09ycjauoejka7axpq.jpg',
+                    filename: 'CampExplorer/zno09ycjauoejka7axpq',
 
                 }
             ],

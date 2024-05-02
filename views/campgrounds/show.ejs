@@ -35,8 +35,6 @@
             </div>
             <div class="card  text-center mb-3">
 
-                <!-- <img src="" class="card-img-top" alt=""> -->
-
                 <div class="card-body">
                     <h5 class="card-title">
                         <%=campground.title%>
@@ -84,10 +82,6 @@
                 <h2>Leave a Review</h2>
                 <form action="/campgrounds/<%=campground._id%>/reviews" method="POST" novalidate
                     class="mb-3 validated-form">
-                    <!-- <div class="mb-3">
-                        <label for="rating" class="form-label">Rating</label>
-                        <input type="range" class="form-range" name="rating" min="1" max="5" id="rating">
-                    </div> -->
                     <div class="mb-3">
                         <fieldset class="starability-basic">
                             <legend>Rating:</legend>
@@ -117,9 +111,6 @@
                         <div class="card mb-3">
                             <div class="card-body">
                                 <div class="mb-3">
-                                    <!-- <h5 class="card-title">
-                                        Rating:
-                                    </h5> -->
                                     <h3 class="starability-result card-title " data-rating="<%=r.rating%>"></h3>
                                     <p>
                                         Rated: <%=r.rating%> stars
